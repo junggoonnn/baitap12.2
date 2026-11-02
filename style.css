@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+.box {
+    background-color: #E2E2E2;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    gap: 30px;
+    margin: 20px auto;
+    max-width: 1366px;
+    padding: 0 20px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: 100%;
+}
+
+.menu {
+    flex: 1;
+    height: 100%;
+    max-height: 34px;
+}
+
+.button {
+    width: 100%;
+    max-width: 120px;
+    height: 100%;
+    max-height: 42px;
+}
+
+.hero-section {
+    background-color: #F1F1F1;
+    width: 100%;
+    max-width: 1366px;
+    min-height: 680px;
+    margin: 0 auto;
+    padding: 80px 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.content {
+    flex: 1;
+    height: 267px;
+}
+
+.image {
+    flex: 1;
+    height: 520px;
+}
+
+.main-section {
+    background-color: #FFFFFF;
+    max-width: 1366px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 40px 83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.title {
+    width: 600px;
+    height: 80px;
+    font-family: 'Lora', serif;
+}
+
+.items-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.item {
+    height: 420px;
+}
+
+.feature-section {
+    background-color: #F1F1F1;
+    max-width: 1366px;
+    min-height: 580px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 80px 83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.items-5-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.item2 {
+    height: 300px;
+}
+
+.items-5-grid .item {
+    height: 280px;
+}
+
+.gallery-section {
+    background-color: #FFFFFF;
+    max-width: 1366px;
+    width: 100%;
+    margin: 40px auto 0 auto;
+    padding: 40px 83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.items-4-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.items-4-grid .item {
+  height: 300px;
+}
+
+.footer {
+    max-width: 1366px;
+    width: 100%;
+    height: 60px;
+    margin: 40px auto 0 auto;
+    border-radius: 0;
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        min-height: 500px;
+    }
+
+    .content {
+        height: 280px;
+    }
+
+    .main-section,
+    .feature-section,
+    .gallery-section {
+        padding: 40px 30px;
+    }
+
+    .items-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .items-5-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .items-4-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .items-4-grid .item {
+        height: 260px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 50px;
+        padding: 0 16px;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .menu {
+        order: 1;
+        flex: 1;
+        height: 36px;
+    }
+
+    .logo {
+        order: 2;
+        flex: 1;
+        width: auto;
+        height: 36px;
+    }
+
+    .button {
+        order: 3;
+        flex: 1;
+        max-width: none;
+        height: 36px;
+    }
+
+    .hero-section {
+        min-height: auto; 
+        padding: 20px 16px;
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse;
+        gap: 16px;                
+        width: 100%;
+    }
+
+    .hero-container .image {
+        width: 100%;             
+        height: 380px;
+    }
+
+    .hero-container .content {
+        width: 100%;             
+        height: 200px; 
+    }
+
+    .main-section, 
+    .feature-section, 
+    .gallery-section {
+        padding: 24px 16px;        
+        margin: 20px auto;         
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 24px;
+    }
+
+    .title {
+        width: 100%;
+        max-width: 320px; 
+        height: 50px;
+    }
+
+    .items-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .items-grid .item {
+        height: 220px;
+        width: 100%;
+    }
+
+    .items-5-grid,
+    .items-4-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 12px;
+    }
+
+    .item2, 
+    .items-5-grid .item, 
+    .items-4-grid .item {
+        height: 180px;
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        height: 50px;
+        margin: 20px auto 0 auto;
+    }
+}
+
+
+
+
+
+
