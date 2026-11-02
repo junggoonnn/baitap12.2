@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,6 +9,7 @@ body {
     font-family: 'Be Vietnam Pro', sans-serif;
     background-color: #FFFFFF;
     color: #333333;
+    overflow-x: hidden;
 }
 
 .box {
@@ -92,6 +94,7 @@ body {
 
 .title {
     width: 600px;
+    max-width: 100%;
     height: 80px;
     font-family: 'Lora', serif;
 }
@@ -155,7 +158,7 @@ body {
 }
 
 .items-4-grid .item {
-  height: 300px;
+    height: 300px;
 }
 
 .footer {
@@ -199,6 +202,7 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* Header 1 hàng ngang */
     .header {
         height: 50px;
         padding: 0 16px;
@@ -239,14 +243,18 @@ body {
         width: 100%;
     }
 
+    .hero-container .content, 
     .hero-container .image {
-        width: 100%;             
-        height: 380px;
+        flex: none;
+        width: 100%;
+    }
+
+    .hero-container .image {
+        height: 380px; 
     }
 
     .hero-container .content {
-        width: 100%;             
-        height: 200px; 
+        height: 200px;
     }
 
     .main-section, 
@@ -258,7 +266,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center; 
-        gap: 24px;
+        gap: 20px;
     }
 
     .title {
@@ -267,24 +275,15 @@ body {
         height: 50px;
     }
 
-    .items-grid {
-        grid-template-columns: 1fr;
-        width: 100%;
-        gap: 16px;
-    }
-
-    .items-grid .item {
-        height: 220px;
-        width: 100%;
-    }
-
-    .items-5-grid,
+    .items-grid, 
+    .items-5-grid, 
     .items-4-grid {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         gap: 12px;
     }
 
+    .item, 
     .item2, 
     .items-5-grid .item, 
     .items-4-grid .item {
@@ -298,7 +297,6 @@ body {
         margin: 20px auto 0 auto;
     }
 }
-
 
 
 
